@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Angled gradient (45deg) */
+body {
+    background-image: url(https://wallpapercave.com/wp/wp14762709.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(29, 2, 2);
+}
+
+.todo-container{
+   width: 25rem;
+   height: 30rem;
+   background: rgba(255, 255, 255, 0.2);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   backdrop-filter: blur(8px);     
+   border-radius: 15px;
+   margin:auto;
+   margin-top: 3rem;
+   box-shadow: 0 8px 32px rgba(0,0,0,0.2); 
+   align-items: center;
+   padding: 1rem;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight: 650;
+    margin-top: 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.task-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-style: none;
+    color: rgb(29, 2, 2);
+    width: 3.3rem;
+    height: 2rem;
+    font-size: 1em;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 0.8rem;
+    font-weight: 700;
+    opacity: 0.8;
+}
+.user-wrapper {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem
+}
+
+.userInput {
+    opacity: 0.8;
+    font-weight: 700;
+    width: 9rem;
+    height: 2rem;
+    font-size: 0.8em;
+    border-radius: 4px;
+    color: black; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-style: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+}
+
+.userInput:onclick{
+    pointer-events: none;
+}
+
+
+.list-item {
+    margin-left: 4rem;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userInput::placeholder {
+    color: rgb(0, 0, 0);   
+    opacity: 0.7;       
+}
+
+.userInput:focus {
+    outline: none;
+    border: none;
+}
+
+.task-checkbox {
+    transform: scale(1.5);
+}
+
+input[type="checkbox"] {
+  accent-color: #000000; /* change to any color */
+  margin-left: -3.4rem;
+  font-weight: 650;
+}
+
+.delete-btn {
+    justify-content: space-between;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    width: 4rem;
+    height: 1.6rem;
+    border-style: none;
+    margin-bottom: 0.4rem;
+    margin-left: auto;
+}
+
+.delete-btn:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.line {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.581);
+    border-radius: 2px;
+}
